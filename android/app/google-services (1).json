@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "438667230009",
+    "project_id": "upschat-406fc",
+    "storage_bucket": "upschat-406fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438667230009:android:d2fce0fdd4ba4df81346e8",
+        "android_client_info": {
+          "package_name": "com.example.ig_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438667230009-t7cu50o9u240gtjmh1f88rg0n9gqhaae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpjXE2ZY4OnfO04S-la3KeJasGORpmvck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438667230009-t7cu50o9u240gtjmh1f88rg0n9gqhaae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
