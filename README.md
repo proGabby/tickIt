@@ -1,4 +1,6 @@
-# ig_clone
+# TICKit
+A mini micro blogging site where users can interacter on every picture post shared by a user
+
 
 A new Flutter project.
 

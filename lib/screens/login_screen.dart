@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:ig_clone/screens/forget_password_screen.dart';
 import 'package:ig_clone/utils/general_file.dart';
 
 import '../resource/auth.dart';
@@ -116,6 +117,19 @@ class _LoginScreenState extends State<LoginScreen> {
                                     BorderRadius.all(Radius.circular(5)))),
                       ),
                     ),
+                    TextButton(
+                        onPressed: () {
+                          Navigator.of(context)
+                              .push(MaterialPageRoute(builder: (context) {
+                            return const ForgetPassword();
+                          }));
+                        },
+                        child: const Text(
+                          "forgot your password?",
+                          style: TextStyle(
+                              color: Colors.redAccent,
+                              fontStyle: FontStyle.italic),
+                        )),
                     sizeBox,
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -143,7 +157,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         )
                       ],
-                    )
+                    ),
+                    const Center(
+                        child: Text("Develop with ❤️  by INIMFON WILLIE"))
                   ],
                 ),
               ))),

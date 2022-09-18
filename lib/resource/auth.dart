@@ -106,4 +106,23 @@ class AuthMethod {
   Future<void> logoutUser() async {
     await _auth.signOut();
   }
+
+  Future<String> resetPassword(String userEmail) async {
+    try {
+      await _auth.sendPasswordResetEmail(email: userEmail);
+      return "reset code sent to email";
+    } catch (e) {
+      if (e == FirebaseAuthException(code: "auth/invalid-email")) {
+        return "Invalid email - Please provide a valid email";
+      } else {
+        return "Error Occur - please try again";
+      }
+    }
+  }
+
+  Future<void> passwordReset(String resetCode, String newUserPassword) async {
+    await _auth.verifyPasswordResetCode(resetCode);
+    await _auth.confirmPasswordReset(
+        code: resetCode, newPassword: newUserPassword);
+  }
 }

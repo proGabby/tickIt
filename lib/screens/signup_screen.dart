@@ -207,7 +207,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                   )
                 ],
-              )
+              ),
+              const Center(child: Text("Develop with ❤️  by INIMFON WILLIE"))
             ],
           ),
         ),
